@@ -11,7 +11,7 @@ library(gbm)
 completeResponses <- read_csv("SurveyData/CompleteResponses.csv")
 
 # Find correlation
-#corcompleteResponses <- read_csv("SurveyData/CompleteResponses.csv")
+
 correlationMatrix <- cor(completeResponses[,1:7])
 correlationMatrix
 # find attributes that are highly corrected (ideally >0.75)
@@ -26,14 +26,10 @@ head(melted_cormat)
 
 
 ####
-
-#Converted all nominal columns to factor using readr
 completeResponses$elevel<-as.factor(completeResponses$elevel)
 completeResponses$car <- as.factor(completeResponses$car)
 completeResponses$zipcode <- as.factor(completeResponses$zipcode)
-#completeResponses$brand <- as.factor(completeResponses$brand)
-completeResponses$brand <- factor(completeResponses$brand)
-
+completeResponses$brand <- as.factor(completeResponses$brand)
 
 attributes(completeResponses)
 str(completeResponses)
@@ -119,6 +115,7 @@ set.seed(1515)
 rfControl <- trainControl(method="cv", number=10)
 
 # Fit Model 
+set.seed(13)
 system.time(fitRF1 <- train(brand~.,data=traininggbm, method='rf', trControl=rfControl))
 fitRF1
 # Predict
@@ -135,6 +132,7 @@ confusionMatrix(predictRf1, testinggbm$brand)
 
 
 ### Manual 
+set.seed(13)
 system.time(
 fitRF2 <- train(brand~.,data=traininggbm, method='rf', trControl=rfControl, tuneLength=5))
 fitRF2
@@ -178,6 +176,7 @@ plot(importanceRf2)
         # car5       0.1413
 
 ### Manual mtry values  
+set.seed(13)
 system.time(
   fitRF3 <- train(brand~.,data=traininggbm, method='rf', trControl=rfControl, tuneGrid=expand.grid(mtry=c(1,10,18,26,34))))
 fitRF3
@@ -226,9 +225,10 @@ postResample(predictc501, testinggbm$brand)
         # 0.8996764 0.7865450 
 confusionMatrix(predictc501, testinggbm$brand)
 
-set.seed(1517)
+
 # Using tunecontrol and expand grid 
 #gridc501 <- expand.grid(.model="tree",.trials=6,.winnow="FALSE")
+set.seed(1516)
 fitC502 <- train(brand~., data = traininggbm, method='C5.0',trControl=rfControl)#,tuneGrid=expand.grid(.model="tree",.trials=6,.winnow="FALSE") )
 summary(fitC502)
         # Confusion Matrix and Statistics
@@ -266,7 +266,7 @@ print(importanceCf2 <- varImp(fitC502))
 
 # Auto tuning C5.0
 
-set.seed(151)
+set.seed(1516)
 fitC503 <- train(brand~., data = traininggbm, method='C5.0')
 summary(fitC503)
 predictc503 <- predict(fitC503, testinggbm)
@@ -316,12 +316,15 @@ confusionMatrix(predictc503, testinggbm$brand)
 #Import dataset
 
 SurveyIncomplete <- read_csv("SurveyData/SurveyIncomplete.csv")
+head(SurveyIncomplete$brand)
+
 #Converted all nominal columns to factor using readr
 SurveyIncomplete$elevel<-as.factor(SurveyIncomplete$elevel)
 SurveyIncomplete$car <- as.factor(SurveyIncomplete$car)
 SurveyIncomplete$zipcode <- as.factor(SurveyIncomplete$zipcode)
 SurveyIncomplete$brand <- as.factor(SurveyIncomplete$brand)
 
+head(SurveyIncomplete$brand)
 
 attributes(SurveyIncomplete)
 str(SurveyIncomplete)
@@ -329,7 +332,7 @@ summary(SurveyIncomplete)
 
 #Count 
 table(SurveyIncomplete$elevel)
-table(SurveyIncomplete$brand) # Extremely imbalanced data 0=4937, 1=63
+table(SurveyIncomplete$brand) 
 table(SurveyIncomplete$car)
 table(SurveyIncomplete$zipcode)
 
@@ -359,10 +362,10 @@ summary1<-summary(predBrand1)
 summary1
 summary2<-summary(predBrand2)
 summary2
-output <- cbind(IncompleteSurveryData=SurveyIncomplete$brand, RFPrediction=predBrand1, C5.0Prediction=predBrand2)
+outputDF <- data.frame(IncompleteSurveryData=SurveyIncomplete$brand, RFPrediction=predBrand1, C5.0Prediction=predBrand2)
 
 #Create CSV for Predicted VS Ground Truth
-write.csv(output,"SurveyData/OutputPreds.csv")
+write.csv(outputDF,file="SurveyData/OutputPreds.csv",row.names = TRUE)
 
 # Plot Brand Preference
 par(mfrow=c(4,1))
@@ -395,3 +398,14 @@ legend("topleft", legend = c("Acer","Sony") ,
        col = c(rgb(0.3,0.1,0.4,0.6) , rgb(0.3,0.5,0.4,0.6) ) , 
        bty = "n", pch=20 , pt.cex = 2, cex = 0.8, horiz = FALSE)
 dev.off()
+
+#### resamples() to create a summary for all models used.
+
+results <- resamples(list(rf=fitRF2, C5.0=fitC502))
+# summarize the distributions
+summary(results)
+# boxplots of results
+bwplot(results)
+# dot plots of results
+dotplot(results)
+####
