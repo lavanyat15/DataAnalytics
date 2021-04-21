@@ -128,6 +128,12 @@ testSet<-readyData[-training_indices,]
 #############################################
 # Linear regression Model 
 #############################################
+# Warning message:
+#   In summary.lm(sales.regression) :
+#   essentially perfect fit: summary may be unreliable
+#   Linear model has perfect score because X5star reviews has perfect linear relationship with Volume.
+#   Model takes just that one variable and makes a perfect prediction hence unreliable
+############################################
 # Training Model
 sales.regression <- lm(Volume~.-ProductNum-ProductWidth-ProductHeight, trainSet)
 
@@ -138,10 +144,6 @@ summary(sales.regression)
 # Residual standard error: 7.975e-14 on 22 degrees of freedom
 # Multiple R-squared:      1,	Adjusted R-squared:      1 
 # F-statistic: 8.818e+32 on 23 and 22 DF,  p-value: < 2.2e-16
-# 
-# Warning message:
-#   In summary.lm(sales.regression) :
-#   essentially perfect fit: summary may be unreliable
 
 set.seed(2469)
 predlm1 = round(predict(sales.regression, testSet),0)
