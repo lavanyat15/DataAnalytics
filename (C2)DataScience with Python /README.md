@@ -17,7 +17,7 @@ The skills practiced in this course include:
 * Comparing and selecting different predictive models
 * Applying predictive models to test sets
 
-### T2 : [EDA and related files] ((T2) EDA for creditOne Data )
+### T2 : [EDA and related files] ((T2) EDA for creditOne Data/T2Credit1-EDA-FINAL.ipynb )
 ### T2 : [EDA and related files] (https://github.com/lavanyat15/DataScience-Code/tree/main/(C2)DataScience%20with%20Python%20/(T2)%20EDA%20for%20creditOne%20Data%20)
 
 ### T3 : [Model code , Presentation of findings and conclusions] (https://github.com/lavanyat15/DataScience-Code/tree/main/(C2)DataScience%20with%20Python%20/(T3)%20CreditOneModel)
