@@ -17,6 +17,6 @@ The skills practiced in this course include:
 * Comparing and selecting different predictive models
 * Applying predictive models to test sets
 
-# T2 : EDA and related files
+## T2 : EDA and related files
 
-# T3 : Model code , Presentation of findings and conclusions
+## T3 : Model code , Presentation of findings and conclusions
