@@ -26,7 +26,7 @@ The dataset used is the cars.csv file.
 Since the best way to learn is through trial and error, so after cars.csv, worked by running a script of code. 
 The dataset is the iris.csv file, and the task was to debug errors in the script.
 
-#### [T2 : Predict Customer Brand Preference for Blackwell Electronics ] (https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R/(T2)%20Predict%20CustomerBrandPref)
+[T2 - Predict Customer Brand Preference for Blackwell Electronics ](https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R/(T2)%20Predict%20CustomerBrandPref)
 The sales team engaged a market research firm to conduct a survey of existing customers. 
 One of the objectives of the survey was to find out which of two brands of computers our customers prefer. Unfortunately, the answer to the brand preference question was not properly captured for all of the respondents.
 
@@ -35,14 +35,14 @@ Data file labelled CompleteResponses.csv is the data set to train your model and
 The file labelled SurveyIncomplete.csv will be your main test set (the data you will apply your optimized model to predict the brand preference). 
 You'll be applying your trained and tested model to this data to prepare the model for production.
 
-#### [T3 : Multiple Regression in R] (https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R/(T3)Multiple%20Regression%20R)
+[T3 - Multiple Regression in R](https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R/(T3)Multiple%20Regression%20R)
 
 Analysis goals :
 
 Predicting sales of four different product types: PC, Laptops, Netbooks and Smartphones
 Assessing the impact services reviews and customer reviews have on sales of different product types
 
-#### [T4 : Market Basket Analysis / Association Rules] (https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R/(T4)MBA%20Association%20Rules)
+[T4 - Market Basket Analysis / Association Rules](https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R/(T4)MBA%20Association%20Rules)
 Analysis Goals : 
 Identify purchasing patterns that will provide insight into Electronidex's clientele
 You will be discovering any interesting relationships (or associations) between customer’s transactions and the item(s) they’ve purchased. These associations can then be used to drive sales-oriented initiatives such as recommender systems like the ones used by Amazon and other eCommerce sites. 
