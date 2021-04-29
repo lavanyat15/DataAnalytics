@@ -6,7 +6,10 @@ There are 2 parts to this course
 2. Determine associations between products that will be used to drive sales-oriented initiatives such as recommender systems. [T4]
 
 [T1 : Intro to R ](https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R/(T1)%20Intro%20to%20R)
-Goals : To learn R by analysing and bugfixing. 
+
+Goals : 
+
+To learn R by analysing and bugfixing. 
 This is a tutorial based task to learn the basics of analytics and visualization using R. 
 Within the tutorial, worked through a regression analysis using a linear regression model by  predicting distances through the speed of certain cars. 
 The dataset used is the cars.csv file.
