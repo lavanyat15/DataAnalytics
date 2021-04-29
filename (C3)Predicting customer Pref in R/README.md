@@ -4,6 +4,7 @@ There are 2 parts to this course
 1. Used machine learning methods to predict which brand of computer products customers prefer, based on customer demographics collected from a marketing survey 
  
 2. Determine associations between products that will be used to drive sales-oriented initiatives such as recommender systems .
+
 The skills practiced in this course represent current professional practice and include:
 
  * Applying data mining in e-commerce (e.g. profitability prediction, customer segmentation, product selection strategy)
