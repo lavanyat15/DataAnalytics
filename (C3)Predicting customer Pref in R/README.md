@@ -6,17 +6,17 @@ There are 2 parts to this course
 2. Determine associations between products that will be used to drive sales-oriented initiatives such as recommender systems .
 The skills practiced in this course represent current professional practice and include:
 
-* Applying data mining in e-commerce (e.g. profitability prediction, customer segmentation, product selection strategy)
-* Preprocessing data for data mining
-* Using data mining tools and different classifiers (e.g., k-nearest neighbor, decision trees, support vector machines) to develop predictive models
-* Using the R statistical programming language
-* Using the caret package for R
-* Applying machine learning techniques to classification and regression problems
-* Optimizing classifiers by adjusting and testing classifier parameters
-* Applying cross-validation methods
-* Assessing the predictive performance of classifiers by examining key error metrics
-* Comparing and selecting different predictive models
-* Applying predictive models to test sets
+ * Applying data mining in e-commerce (e.g. profitability prediction, customer segmentation, product selection strategy)
+ * Preprocessing data for data mining
+ * Using data mining tools and different classifiers (e.g., k-nearest neighbor, decision trees, support vector machines) to develop predictive models
+ * Using the R statistical programming language
+ * Using the caret package for R
+ * Applying machine learning techniques to classification and regression problems
+ * Optimizing classifiers by adjusting and testing classifier parameters
+ * Applying cross-validation methods
+ * Assessing the predictive performance of classifiers by examining key error metrics
+ * Comparing and selecting different predictive models
+ * Applying predictive models to test sets
 
 #### [T1 : Intro to R ] (https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R/(T1)%20Intro%20to%20R)
 This is a tutorial based task to learn the basics of analytics and visualization using R. 
