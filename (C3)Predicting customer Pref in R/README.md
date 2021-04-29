@@ -1,11 +1,11 @@
 ## Data Analytics: Predicting Customer Preferences in R
 
 There are 2 parts to this course 
-1. Used machine learning methods to predict which brand of computer products customers prefer, based on customer demographics collected from a marketing survey 
+1. Used machine learning methods to predict which brand of computer products customers prefer, based on customer demographics collected from a marketing survey . [T2, T3]
  
-2. Determine associations between products that will be used to drive sales-oriented initiatives such as recommender systems .
+2. Determine associations between products that will be used to drive sales-oriented initiatives such as recommender systems. [T4]
 
-#### [T1 : Intro to R ] (https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R/(T1)%20Intro%20to%20R)
+[T1 : Intro to R ](https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R/(T1)%20Intro%20to%20R)
 This is a tutorial based task to learn the basics of analytics and visualization using R. 
 Within the tutorial, worked through a regression analysis using a linear regression model by  predicting distances through the speed of certain cars. 
 The dataset used is the cars.csv file.
