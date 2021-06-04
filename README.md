@@ -5,4 +5,4 @@ Repository containing Code for data science projects completed by me for academi
 
 [2 . Data Analytics: Predicting Customer Preferences in R ](https://github.com/lavanyat15/DataScience-Code/tree/main/(C3)Predicting%20customer%20Pref%20in%20R)
 
-[3. House Energy consumption prediction in R ](https://github.com/lavanyat15/DataScience-Code/tree/main/(C4)Data%20Visualise%20and%20Analysis)
+[3. Data Analysis and Visualization in R ](https://github.com/lavanyat15/DataScience-Code/tree/main/(C4)Data%20Visualise%20and%20Analysis)
