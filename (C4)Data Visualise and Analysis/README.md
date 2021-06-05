@@ -1,7 +1,5 @@
 ## Deep Analysis and Visualization in R
 
-1. Visualize and analyse energy consumption in home 
-
 [T1 : Visualise and Analyse Energy consumption ](https://github.com/lavanyat15/DataScience-Code/tree/main/(C4)Data%20Visualise%20and%20Analysis/(T1)%20Visualise%20and%20Analyse%20Energy%20consumption)
 
 Goals : 
