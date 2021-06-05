@@ -4,6 +4,6 @@
 
 Goals : 
 
-Analyse sub-metered household data. 
-Explore visualizations of the data and then build predictive models that will demonstrate how much power each area could use in a given 30 day period.
+Analyse sub-metered household data. <br>
+Explore visualizations of the data and then build predictive models that will demonstrate how much power each area could use in a given 30 day period.<br>
 Also provide the client with five energy savings suggestions based on insights that you glean from your analysis.
